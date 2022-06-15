@@ -2,7 +2,7 @@
 print("*******************************WELCOME TO THE GOD PROGRAM**************************************")
 Entering = input("Press Enter to Start")
 choice = int(input("Press 1 to run the aplhabetical order sorter...2 for array calculator...3 for armmstrong number...4 for Capitalizing a sentence... 5 to check whether a given array is monotonic or not... 6 to check whether a given date is valid or not... 7 to check whether a number is a harshad number or not... 8 to check the lcm of numbers... 9 to print a random meaningful word based on user input... 10 to check if an array is monotonic or not... 11 to print the multiplication table... 12 to check if a triangle is valid or not... 13 to get the union and intersection of two arrays... 14 to perform various calculations regarding velocity "))
-
+word_list = []
 if choice == 1:
     string = input("Enter the word you want to sort")
     while string == "":
@@ -12,6 +12,7 @@ if choice == 1:
     for word in word_list:
         print(word, " ")
         string.sort()
+        print(string)
 
 elif choice == 2:
     #lmit of numbers
